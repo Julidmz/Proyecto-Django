@@ -1,0 +1,20 @@
+<h2>{{titulo}}</h2>
+
+<ul>
+
+    {%for prod in productos%}
+        <li>
+            <p>
+                Producto ID: {{prod.nombre}}<br>
+                Descripcion: {{prod.descripcion}}<br>
+                Precio: {{prod.precio}}<br>
+                Stock: {{prod.stock}}<br>
+                Disponible: {{prod.disponible}}<br>
+            </p>
+        </li>
+        <hr>
+        <br>
+    {%endfor%}
+
+</ul>
+
