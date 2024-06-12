@@ -1,0 +1,32 @@
+<h2>{{titulo}}</h2>
+
+<ul>
+
+    {%for prod in productos%}
+        <li>
+            <p>
+                Producto ID: {{prod.id}}<br>
+                Nombre: {{prod.nombre}}<br>
+                Descripcion: {{prod.descripcion}}<br>
+                Precio: {{prod.precio}}<br>
+                Stock: {{prod.stock}}<br>
+                Disponible: {{prod.disponible}}<br>
+                Fecha De Creacion: {{producto.fecha_creacion}}<br>
+                Fecha De Actualizacion: {{producto.fecha_actualizacion}}<br>
+
+                <a href=" {% url 'editarProducto' prod.id %} ">
+                <button>Editar</button></a>
+
+                <a href=" {% url 'borrarProducto' prod.id %} ">
+                <button>Borrar</button></a>
+                    
+            </p>
+        </li>
+        <hr>
+        <br>
+    {%endfor%}
+
+
+
+
+
